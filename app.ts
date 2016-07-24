@@ -5,8 +5,6 @@ import { ProductDepartment } from './src/components/product-department.component
 import { PriceDisplay } from './src/components/price-display.component';
 import { ProductRow } from './src/components/product-row.component';
 import { ProductsList } from './src/components/products-list.component';
-import {provide} from '@angular/core';
-import {APP_BASE_HREF} from '@angular/common';
 
 import {bootstrap} from '@angular/platform-browser-dynamic';
 
@@ -32,17 +30,17 @@ class InventoryApp {
     this.products = [
       new Product(
         'MYSHOES', 'Black Running Shoes',
-        '/resources/images/products/black-shoes.jpg',
+        '/inventory-app/resources/images/products/black-shoes.jpg',
         ['Men', 'Shoes', 'Running Shoes'],
         109.99),
       new Product(
         'NEATOJACKET', 'Blue Jacket',
-        '/resources/images/products/blue-jacket.jpg',
+        '/inventory-app/resources/images/products/blue-jacket.jpg',
         ['Women', 'Apparel', 'Jackets & Vests'],
         238.99),
       new Product(
         'NICEHAT', 'A Nice Black Hat',
-        '/resources/images/products/black-hat.jpg',
+        '/inventory-app/resources/images/products/black-hat.jpg',
         ['Men', 'Accessories', 'Hats'],
         29.99)
       ];
@@ -53,4 +51,4 @@ class InventoryApp {
   }
 }
 
-bootstrap(InventoryApp, [provide(APP_BASE_HREF, {useValue : '/inventory-app/' })]);
+bootstrap(InventoryApp);

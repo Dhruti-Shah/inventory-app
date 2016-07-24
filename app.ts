@@ -53,4 +53,4 @@ class InventoryApp {
   }
 }
 
-bootstrap(InventoryApp, [provide(APP_BASE_HREF, {useValue : '/' })]);
+bootstrap(InventoryApp, [provide(APP_BASE_HREF, {useValue : '/inventory-app/' })]);

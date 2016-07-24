@@ -5,6 +5,8 @@ import { ProductDepartment } from './src/components/product-department.component
 import { PriceDisplay } from './src/components/price-display.component';
 import { ProductRow } from './src/components/product-row.component';
 import { ProductsList } from './src/components/products-list.component';
+import {provide} from '@angular/core';
+import {APP_BASE_HREF} from '@angular/common';
 
 import {bootstrap} from '@angular/platform-browser-dynamic';
 
@@ -51,4 +53,4 @@ class InventoryApp {
   }
 }
 
-bootstrap(InventoryApp);
+bootstrap(InventoryApp, [provide(APP_BASE_HREF, {useValue : '/' })]);

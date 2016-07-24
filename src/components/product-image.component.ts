@@ -9,7 +9,7 @@ import { Product } from '../models/product';
   host: {class: 'ui small image'},
   inputs: ['product'],
   template: `
-  <img class="product-image" src="product.imageUrl">
+  <img class="product-image" [src]="product.imageUrl">
   `
 })
 export class ProductImage {

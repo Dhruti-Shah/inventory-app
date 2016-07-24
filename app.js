@@ -18,9 +18,9 @@ var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
 var InventoryApp = (function () {
     function InventoryApp() {
         this.products = [
-            new product_1.Product('MYSHOES', 'Black Running Shoes', '/resources/images/products/black-shoes.jpg', ['Men', 'Shoes', 'Running Shoes'], 109.99),
-            new product_1.Product('NEATOJACKET', 'Blue Jacket', '/resources/images/products/blue-jacket.jpg', ['Women', 'Apparel', 'Jackets & Vests'], 238.99),
-            new product_1.Product('NICEHAT', 'A Nice Black Hat', '/resources/images/products/black-hat.jpg', ['Men', 'Accessories', 'Hats'], 29.99)
+            new product_1.Product('MYSHOES', 'Black Running Shoes', '/inventory-app/resources/images/products/black-shoes.jpg', ['Men', 'Shoes', 'Running Shoes'], 109.99),
+            new product_1.Product('NEATOJACKET', 'Blue Jacket', '/inventory-app/resources/images/products/blue-jacket.jpg', ['Women', 'Apparel', 'Jackets & Vests'], 238.99),
+            new product_1.Product('NICEHAT', 'A Nice Black Hat', '/inventory-app/resources/images/products/black-hat.jpg', ['Men', 'Accessories', 'Hats'], 29.99)
         ];
     }
     InventoryApp.prototype.productWasSelected = function (product) {
